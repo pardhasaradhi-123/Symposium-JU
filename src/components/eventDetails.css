@@ -1,0 +1,75 @@
+.eventDetails-container {
+  height: auto;
+  width: 100%;
+}
+.eventDetails-container .eventDetails-source-container .img-container {
+  width: 100%;
+  height: 100vh;
+}
+.eventDetails-container .eventDetails-source-container .img-container img {
+  height: 100%;
+  width: 100%;
+}
+.eventDetails-container h1 {
+  text-align: center;
+}
+.eventDetails-container h2 {
+  text-transform: capitalize;
+}
+.eventDetails-container p {
+  padding: 10px;
+  padding-left: 90px;
+}
+.eventDetails-container .eventDetails-source-container .details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 20px;
+}
+.eventDetails-container .eventDetails-source-container .details .container {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+}
+.eventDetails-container .eventDetails-source-container ul li {
+  list-style: none;
+  padding: 5px;
+}
+.rules {
+  margin: 10px;
+}
+.eventDetails-container .btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.btn-container .btn {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+  margin: 20px;
+}
+.btn-container .btn button {
+  margin: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .eventDetails-container .eventDetails-source-container .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .eventDetails-container .eventDetails-source-container p {
+    padding-left: 40px;
+  }
+  .eventDetails-container .eventDetails-source-container .img-container {
+    width: 100%;
+    height: 45%;
+  }
+  .eventDetails-container .eventDetails-source-container .img-container img {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  border: 2px #ffffff;
+  text-align: center;
+  height: auto;
+  margin: 20px;
+  width: 400px;
+  background: #3a4049;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 5xpx;
+}
+.card img {
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+}
+.card {
+  animation: cardAnimation 3s linear infinite alternate;
+}
+@keyframes cardAnimation {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.001);
+  }
+}
+.card button:hover {
+  cursor: pointer;
+}
+.card h3 {
+  color: #e8e8e8b6;
+  text-transform: capitalize;
+  padding: 10px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 766px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .card {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    height: 350px;
+    width: 340px;
+    background: #3a4049;
+  }
+  .card img {
+    height: 70%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .card button:hover {
+    cursor: pointer;
+  }
+  .card h3 {
+    color: #e8e8e8b6;
+    text-transform: capitalize;
+    padding: 2px;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-left: 150px;
+  }
+  .card {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    height: 500px;
+    width: 600px;
+    background: #3a4049;
+  }
+  .card img {
+    height: 60%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .card button:hover {
+    cursor: pointer;
+  }
+  .card h3 {
+    color: #e8e8e8b6;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 25px;
+  }
+}
